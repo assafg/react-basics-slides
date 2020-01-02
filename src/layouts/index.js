@@ -10,11 +10,11 @@ import logo from '../resources/logo.png';
 
 import './index.css';
 
-const Footer = ({ name, title, date }) => (
+const Footer = ({ name, title, date, index }) => (
   <footer>
     <img className="footer__logo" src={logo} alt="Tikal" />
     <div>{title}</div>
-    <div />
+    <div>{index}</div>
   </footer>
 );
 
@@ -89,6 +89,7 @@ function TemplateWrapper(props) {
         name={site.siteMetadata.name}
         title={site.siteMetadata.title}
         date={site.siteMetadata.date}
+        index={data.slide.index}
       />
     </div>
   );

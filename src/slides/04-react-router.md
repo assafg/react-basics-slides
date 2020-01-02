@@ -220,13 +220,23 @@ for the route `/user/:id`
 
 ## History
 
-- A history is parameter (object) passed into a component wrapped by a `<Route />`.
+- A history is a parameter (object) passed into a component wrapped by a `<Route />`.
 
 - use it to navigate between routes
+
+```js
+const { history } = this.props;
+
+//...
+history.push('/new-location')
+```
 
 ---
 
 ## withRouter
 
 A HoC that adds route related parameters to a component
+
+
+
 
